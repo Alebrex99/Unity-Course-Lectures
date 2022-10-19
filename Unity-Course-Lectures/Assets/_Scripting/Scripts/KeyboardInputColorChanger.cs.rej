@@ -1,0 +1,9 @@
+diff a/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs b/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs	(rejected hunks)
+@@ -4,6 +4,7 @@
+ 
+ public class KeyboardInputColorChanger : MonoBehaviour
+ {
++    //ciao
+     private Color[] _colors = new[]
+         {Color.red, Color.blue, Color.green, Color.magenta, Color.white, Color.cyan, Color.yellow, Color.black};
+ 

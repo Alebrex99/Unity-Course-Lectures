@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyboardInputColorChanger : MonoBehaviour
 {
-    //ciao
+    //COMMENTO DI PROVA GIT HUB
     private Color[] _colors = new[]
         {Color.red, Color.blue, Color.green, Color.magenta, Color.white, Color.cyan, Color.yellow, Color.black};
 
