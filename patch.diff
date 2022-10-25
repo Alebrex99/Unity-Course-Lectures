@@ -1,0 +1,29 @@
+From 4970aaa98cb30fded8349f5ae176659bd9e746e7 Mon Sep 17 00:00:00 2001
+From: Alebrex99 <ale.brex99@gmail.com>
+Date: Wed, 19 Oct 2022 13:28:39 +0200
+Subject: [PATCH] commit final
+
+---
+ .../_Scripting/Scripts/KeyboardInputColorChanger.cs.rej     | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs.rej b/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs.rej
+index 3ece1ba..590b468 100644
+--- a/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs.rej
++++ b/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs.rej
+@@ -1,9 +1,9 @@
+ diff a/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs b/Unity-Course-Lectures/Assets/_Scripting/Scripts/KeyboardInputColorChanger.cs	(rejected hunks)
+-@@ -4,6 +4,7 @@
++@@ -4,7 +4,6 @@
+  
+  public class KeyboardInputColorChanger : MonoBehaviour
+  {
+-+    //ciao
++-    //ciao
++     //COMMENTO DI PROVA GIT HUB
+      private Color[] _colors = new[]
+          {Color.red, Color.blue, Color.green, Color.magenta, Color.white, Color.cyan, Color.yellow, Color.black};
+- 
+-- 
+2.33.0.windows.2
+
