@@ -24,7 +24,7 @@ public class SimpleThirdPRigidbodyController : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         _inputVector = new Vector3(h, 0, v);
-        _inputSpeed = Mathf.Clamp(_inputVector.magnitude, 0f, 1f);
+        _inputSpeed = Mathf.Clamp(_inputVector.magnitude, 0f, 1f); //metodo per normalizzare: la magnitudine ridotta tra 0 e 1
 
         //Compute direction According to Camera Orientation
         _targetDirection = _cameraT.TransformDirection(_inputVector).normalized;
