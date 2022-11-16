@@ -6,6 +6,7 @@ public class OnCollisionDebugger : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
+        string text = "" + gameObject.name + "OnCollision";
         Debug.Log($"{gameObject.name} --> OnCollision ENTER with {collision.gameObject.name}");
     }
 
