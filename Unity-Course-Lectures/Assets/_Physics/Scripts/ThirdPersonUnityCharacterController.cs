@@ -35,9 +35,9 @@ public class ThirdPersonUnityCharacterController : MonoBehaviour
         //Ground Check
         _isGrounded = Physics.CheckSphere(_groundCheck.position, _groundDistance, _groundMask);
 
-        if (_isGrounded && _velocity.y < 0f)
+        if (_isGrounded && _velocity.y < 0f) //velocity.y negativa perchè sta cadendo verso il basso (-y)
         {
-            _velocity.y = -2f;
+            _velocity.y = -2f; //usato cosi personaggio non si ferma troppo presto
         }
 
         //GET Input
@@ -60,7 +60,7 @@ public class ThirdPersonUnityCharacterController : MonoBehaviour
         //JUMPING
         if (Input.GetKey(KeyCode.Space) && _isGrounded)
         {
-            _velocity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity);
+            _velocity.y = Mathf.Sqrt(_jumpHeight * -2 * _gravity); //salto verso l'alto, calcolato con gravità
         }
 
         //FALLING
