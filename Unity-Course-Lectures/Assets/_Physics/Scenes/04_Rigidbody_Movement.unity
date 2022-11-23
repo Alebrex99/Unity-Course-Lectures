@@ -4238,13 +4238,18 @@ PrefabInstance:
     - target: {fileID: 2813729054619221508, guid: a54ec62c8c270b5429510dccf22dc631,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2813729054619221510, guid: a54ec62c8c270b5429510dccf22dc631,
         type: 3}
       propertyPath: _cameraT
       value: 
       objectReference: {fileID: 1312140138}
+    - target: {fileID: 2813729054619221511, guid: a54ec62c8c270b5429510dccf22dc631,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2817458233136790278, guid: a54ec62c8c270b5429510dccf22dc631,
         type: 3}
       propertyPath: m_RootOrder

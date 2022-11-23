@@ -28,7 +28,7 @@ public class FPSInteractionManager : MonoBehaviour
     {
         _rayOrigin = _fpsCameraT.position + _fpsController.radius * _fpsCameraT.forward;
 
-        if(_grabbedObject == null)
+        if(_grabbedObject == null) //se non ho ancora preso in mano l'oggetto, controllo che interazione ho
             CheckInteraction();
 
         if (_grabbedObject != null && Input.GetMouseButtonDown(0))
@@ -61,8 +61,8 @@ public class FPSInteractionManager : MonoBehaviour
             {
                 if (Input.GetMouseButtonDown(1))
                 {
-                    _pointingGrabbable.Grab(gameObject);
-                    Grab(_pointingGrabbable);
+                    _pointingGrabbable.Grab(gameObject); //questa Grab è quella di Grabbable, riceve GameObject 
+                    Grab(_pointingGrabbable); //questa Grab è qulla di questo script, riceve un Grabbable
                 }
                     
             }
