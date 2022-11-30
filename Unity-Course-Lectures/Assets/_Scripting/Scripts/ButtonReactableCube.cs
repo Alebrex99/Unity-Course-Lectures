@@ -19,7 +19,7 @@ public class ButtonReactableCube : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        changeColorButton.OnButtonPressed += OnChangeColorButtonPressed;
+        changeColorButton.OnButtonPressed += OnChangeColorButtonPressed; //iscrizione ad evento OnButtonPressed, chiama funzione in risposta
         changeScaleButton.OnButtonPressed += OnChangeScaleButtonPressed;
         changeYPosButton.OnButtonPressed += OnChangeYPosButtonPressed;
 
