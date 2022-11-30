@@ -56,5 +56,8 @@ public class AnimatedThirdPController : MonoBehaviour
         _animator.SetFloat("speed", _inputSpeed);
 
         _animator.SetBool("dead", Input.GetKey(KeyCode.Z));
+
+        //MIE MODIFICHE
+        _animator.SetBool("relive", Input.GetKey(KeyCode.R));
     }
 }
