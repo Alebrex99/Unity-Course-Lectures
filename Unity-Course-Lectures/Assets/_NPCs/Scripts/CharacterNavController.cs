@@ -21,7 +21,9 @@ public class CharacterNavController : MonoBehaviour
 	
 	
 	void Update ()
-    {
+    {   //miei debug: disegno raggi / linee
+        Debug.DrawLine(_targetFeedback.transform.position, transform.position, Color.red);
+        Debug.DrawRay(transform.position, transform.forward*10f,Color.black);
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
@@ -36,9 +38,11 @@ public class CharacterNavController : MonoBehaviour
                                                                 hit.point.z);
                 _targetFeedback.transform.forward = hit.normal;
             }
+            Debug.DrawRay(hit.point, _targetFeedback.transform.forward * 12f, Color.green);
         }
+        
 
-        if(_targetFeedback != null)
+        if (_targetFeedback != null)
             _targetFeedback.SetActive(!TargetReached());
     }
 
