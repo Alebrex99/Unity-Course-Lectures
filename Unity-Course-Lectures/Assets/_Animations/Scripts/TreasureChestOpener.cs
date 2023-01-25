@@ -18,7 +18,7 @@ public class TreasureChestOpener : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.O))
+        if(Input.GetKeyDown(KeyCode.Space))
             Open();
         if (Input.GetKeyDown(KeyCode.C))
             Close();
